@@ -1,5 +1,5 @@
 [System]
-Name='sugeno_9_gaussmf_wtsum'
+Name='sugeno_9_rules_gaussmf_wtaver'
 Type='sugeno'
 Version=2.0
 NumInputs=2
@@ -9,7 +9,7 @@ AndMethod='min'
 OrMethod='max'
 ImpMethod='prod'
 AggMethod='sum'
-DefuzzMethod='wtsum'
+DefuzzMethod='wtaver'
 
 [Input1]
 Name='error'

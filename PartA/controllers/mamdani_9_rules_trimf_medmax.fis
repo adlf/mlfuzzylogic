@@ -1,5 +1,5 @@
 [System]
-Name='mandami_9rules_gaussmf_minmax_mom'
+Name='mamdani_9_rules_trimf_medmax'
 Type='mamdani'
 Version=2.0
 NumInputs=2
@@ -15,25 +15,25 @@ DefuzzMethod='mom'
 Name='error'
 Range=[-1 1]
 NumMFs=3
-MF1='NG':'gaussmf',[0.3397 -1]
-MF2='zero':'gaussmf',[0.3397 1.388e-17]
-MF3='PG':'gaussmf',[0.3397 1]
+MF1='NG':'trimf',[-2 -1 0]
+MF2='zero':'trimf',[-0.997354497354497 0 1]
+MF3='PG':'trimf',[0 1 2]
 
 [Input2]
 Name='derivate'
 Range=[-1 1]
 NumMFs=3
-MF1='NG':'gaussmf',[0.3398 -1]
-MF2='zero':'gaussmf',[0.3398 0]
-MF3='PG':'gaussmf',[0.3398 1]
+MF1='NG':'trimf',[-2 -1 0]
+MF2='zero':'trimf',[-1 0 1]
+MF3='PG':'trimf',[0 1 2]
 
 [Output1]
 Name='output'
 Range=[-1 1]
 NumMFs=3
-MF1='NG':'gaussmf',[0.3397 -1]
-MF2='zero':'gaussmf',[0.3397 1.388e-17]
-MF3='PG':'gaussmf',[0.3398 1]
+MF1='NG':'trimf',[-2 -1 0]
+MF2='zero':'trimf',[-1 0 1]
+MF3='PG':'trimf',[0 1 2]
 
 [Rules]
 1 1, 1 (1) : 1
